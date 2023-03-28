@@ -61,10 +61,11 @@ body {
   color: #00b140;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 600px;
+  margin: auto;
 }
 
-main, .hero {
+main, .hero, footer {
   padding: 24px;
 }
 
@@ -78,7 +79,7 @@ nav > ul {
   overflow: hidden;
 }
 
-nav > ul > li > a {
+a {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -113,7 +114,7 @@ h3 {
   font-size: 1.6rem;
   font-weight: 600;
 
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .headshot {
@@ -189,71 +190,37 @@ article > div > div {
 
 article > div:last-of-type {
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 article > div:last-of-type > a {
   color: #36CB2C;
-  font-style: italic;
   font-size: 0.9rem;
-}
-
-#about {
-  margin-bottom: 48px;
-}
-
-/*
-
-
-
-
-
-
-.hero {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 200px;
-  margin-bottom: 48px;
-}
-
-h1 {
-  font-size: 3em;
-  font-weight: 600;
-  margin: 0;
-  padding: 10%;
-}
-
-.headshot {
-  margin-right: 64px;
-  
-}
-
-#skills > h2 {
   text-align: center;
-  text-transform: uppercase;
+}
+
+article > div:last-of-type > p {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+#about, .certifications {
   margin-bottom: 48px;
-  font-size: 2em;
-  font-weight: 600;
-  margin: 0;
-
 }
 
-
-
-#projects {
-  padding: 24px;
+.certifications > p {
+  font-style: italic;
 }
 
-article {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 48px;
-  flex-wrap: wrap;
+#contact > p > a {
+  color: #36CB2C;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  font-style: italic;
 }
+/* MEDIA QUERIES */
 
-article > div {
-  flex: 0 1 50%;
+@media (min-width: 601px) {
+
 }
-article > img {
-  height: auto;
-  width: 300px;
-}
-*/
