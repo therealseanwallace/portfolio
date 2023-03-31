@@ -122,7 +122,7 @@ h3 {
   width: 300px;
   margin: auto;
   border-radius: 50%;
-  filter: drop-shadow(20px 30px 50px #00b140);
+
 }
 
 header {
@@ -207,6 +207,10 @@ article > div:last-of-type > p {
 
 #about, .certifications {
   margin-bottom: 48px;
+}
+
+#about > div {
+  display: flex;
 }
 
 .certifications > p {
