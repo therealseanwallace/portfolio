@@ -159,6 +159,10 @@ h1, .hero > h2 {
 h1 {
   font-size: 3rem;
 }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
 
 .hero > h2 {
   font-size: 2rem;
@@ -223,10 +227,27 @@ h1 {
   text-align: center;
 }
 
-.skills > h2 {
-  font-size: 2rem;
-  margin-bottom: 50px;
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 40px;
 }
+
+.projects article {
+  margin-bottom: 100px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article > div > h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+
 @media (min-width: 768px) {
   .hamburgerMenu {
     display: none;
