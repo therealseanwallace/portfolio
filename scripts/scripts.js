@@ -1,21 +1,26 @@
-// get the hamburger menu and modal
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const modal = document.querySelector(".modal");
 const modalCloseButton = document.querySelector(".modalCloseButton");
 
-// add event listener to hamburger menu
+const showHamburger = () => {
+  hamburgerMenu.classList.remove("hidden");
+};
+
 hamburgerMenu.addEventListener("click", (event) => {
-  modal.style.display = "block";
+  modal.classList.remove("hidden");
+  hamburgerMenu.classList.add("hidden");
   event.stopPropagation(); // prevent event bubbling up to window
 });
 
 modalCloseButton.addEventListener("click", () => {
-  modal.style.display = "none";
+  modal.classList.add("hidden");
+  showHamburger();
 });
 
 window.addEventListener("click", (event) => {
-  // only close the modal if it's currently visible and the click was outside the modal
-  if (modal.style.display === "block" && !modal.contains(event.target)) {
-    modal.style.display = "none";
+  // close the modal if it's currently visible and the click was outside the modal
+  if (!modal.classList.contains("hidden") && !modal.contains(event.target)) {
+    modal.classList.add("hidden");
+    showHamburger();
   }
 });

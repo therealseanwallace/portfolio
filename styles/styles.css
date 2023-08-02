@@ -66,7 +66,7 @@ h6 {
 .hamburgerMenu div {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 .hamburgerMenu div:first-of-type {
@@ -104,7 +104,6 @@ li > a {
 }
 
 .modal {
-  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   right: 0;
@@ -126,10 +125,6 @@ li > a {
   right: 4px;
 }
 
-.show-modal {
-  display: block;
-}
-
 .menuList {
   display: none;
 }
@@ -142,4 +137,104 @@ li > a {
 	align-items: flex-end;
 	padding-right: 50px;
 	padding-top: 70px;
+}
+
+.hero {
+  background: #333 url("../assets/hero.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, .hero > h2 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.hero > h2 {
+  font-size: 2rem;
+}
+
+#about {
+  background-image: url("../assets/bg.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0 120px 0;
+}
+
+.picContainer {
+  background: rgb(194, 194, 194);
+  width: 300px;
+  box-shadow: -18px -24px rgb(145, 0, 0), -26px -32px 8px rgb(121, 121, 121);
+}
+
+.aboutDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+  width: 300px;
+}
+
+.aboutDetail p {
+  text-align: justify;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(194, 194, 194, 0.096);
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.skill {
+  font-size: 1.2rem;
+  font-weight: 600;
+  flex: 1 1 120px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgb(145, 0, 0);
+  color: whitesmoke;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.skills > h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .hamburgerMenu {
+    display: none;
+  }
+  .menuList {
+    display: flex;
+  }
+  .modal {
+    display: none;
+  }
 }
