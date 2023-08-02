@@ -47,26 +47,99 @@ h6 {
 /* FONTS */
 
 @font-face {
-  font-family: 'roboto-mono';
+  font-family: "roboto-mono";
   src: url(../assets/RobotoMono.ttf);
 }
 
 /* STYLES */
 
+* {
+  font-family: "roboto-mono", monospace;
+  font-size: 16px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburgerMenu div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+}
+
+.hamburgerMenu div:first-of-type {
+  margin-bottom: 6px;
+}
+
+.hamburgerMenu div:last-of-type {
+  margin-top: 6px;
+}
+
+nav {
+  background-color: rgb(145, 0, 0);
+  align-items: center;
+  padding-right: 4vw;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    height: 70px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  gap: 5vw;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 li > a {
-  text-decoration: none
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-size: large;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  right: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 40%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal button {
+  background-color: #00000000;
+  color: whitesmoke;
+  border: none;
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+
+.show-modal {
+  display: block;
+}
+
+.menuList {
+  display: none;
+}
+
+.modalList {
+	padding-left: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-end;
+	padding-right: 50px;
+	padding-top: 70px;
 }
