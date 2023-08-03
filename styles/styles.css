@@ -104,7 +104,8 @@ li > a {
   text-decoration: none;
   text-transform: uppercase;
   color: whitesmoke;
-  font-size: large;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .modal {
@@ -134,13 +135,13 @@ li > a {
 }
 
 .modalList {
-	padding-left: 0px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	align-items: flex-end;
-	padding-right: 50px;
-	padding-top: 70px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  padding-right: 50px;
+  padding-top: 70px;
 }
 
 .hero {
@@ -170,7 +171,8 @@ li > a {
   box-shadow: -3px -3px 5px 0px rgba(245, 245, 245, 0.7);
 }
 
-h1, .hero > h2 {
+h1,
+.hero > h2 {
   color: whitesmoke;
   text-align: center;
 }
@@ -187,6 +189,10 @@ h2 {
   font-size: 2rem;
 }
 
+#contact > h2 {
+  margin-bottom: 18px;
+}
+
 #about {
   background-image: url("../assets/bg.svg");
   display: flex;
@@ -201,20 +207,28 @@ h2 {
   box-shadow: -18px -24px rgb(145, 0, 0), -26px -32px 8px rgb(121, 121, 121);
 }
 
+.fullImageLink {
+  text-align: center;
+}
+
 .aboutDetail {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding-top: 50px;
-  width: 300px;
+  max-width: 300px;
 }
 
 .aboutDetail p {
-  text-align: justify;
+  text-align: center;
 }
 
-.skills {
+.aboutDetail h3 {
+  font-size: 1.8rem;
+}
+
+#skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,6 +238,9 @@ h2 {
   background-color: rgba(194, 194, 194, 0.096);
 }
 
+.sectionTitle {
+  text-align: center;
+}
 .skillsList {
   display: flex;
   flex-wrap: wrap;
@@ -232,6 +249,7 @@ h2 {
   list-style-type: none;
   gap: 12px;
   padding: 12px 0;
+  max-width: 800px;
 }
 
 .skill {
@@ -246,54 +264,71 @@ h2 {
   text-align: center;
 }
 
-.projects {
+#projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 40px 0 40px;
 }
 
-.projects article {
-  margin-bottom: 100px;
+#projects article {
+  margin-bottom: 80px;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects article:last-of-type {
+#projects article:last-of-type {
   margin-bottom: 60px;
 }
 
-.projects article > div:first-of-type {
+#projects article > div:first-of-type {
   margin-bottom: 20px;
 }
 
-.projects article > div > img{
+#projects article > div > a > img {
   margin-bottom: 20px;
 }
-article > div > h3 {
+
+.projectTitle {
   font-size: 1.4rem;
-  margin-top: 20px;
+  margin: 0px 20px;
+  text-align: center;
 }
 
-#contact, footer {
-  max-width: 1000px;
+.projectImage {
+  max-width: 80vw;
+}
+
+.projectDescription {
+  text-align: center;
+  margin: 20px 0;
+  max-width: 80vw;
+}
+
+#contact,
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 40px;
   gap: 20px;
   background-color: rgba(194, 194, 194, 0.096);
+  text-align: center;
 }
 
-#contact > p:last-of-type{
+footer {
+  padding: 0 0 20px 0;
+}
+
+#contact > p {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
+  align-items: center;
+  text-align: justify;
 }
-
 
 @media (min-width: 768px) {
   .hamburgerMenu {
@@ -304,5 +339,15 @@ article > div > h3 {
   }
   .modal {
     display: none;
+  }
+
+  .aboutDetail {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projectDescription {
+    max-width: 800px;
   }
 }
