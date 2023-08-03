@@ -63,6 +63,10 @@ h6 {
   display: none;
 }
 
+.hamburgerMenu:hover {
+  cursor: pointer;
+}
+
 .hamburgerMenu div {
   width: 35px;
   height: 5px;
@@ -144,11 +148,26 @@ li > a {
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
-  height: 30vh;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero > button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; /* Small border-radius */
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s; /* Add transition for the box shadow */
+}
+
+.hero > button:hover {
+  box-shadow: -3px -3px 5px 0px rgba(245, 245, 245, 0.7);
 }
 
 h1, .hero > h2 {
@@ -173,7 +192,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0 120px 0;
+  padding: 120px 0 60px 0;
 }
 
 .picContainer {
@@ -199,7 +218,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 40px;
+  padding: 60px 40px;
   display: flex;
   justify-content: center;
   background-color: rgba(194, 194, 194, 0.096);
@@ -218,7 +237,7 @@ h2 {
 .skill {
   font-size: 1.2rem;
   font-weight: 600;
-  flex: 1 1 120px;
+  flex: 1 1 60px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: rgb(145, 0, 0);
@@ -231,7 +250,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 40px;
+  padding: 60px 40px 0 40px;
 }
 
 .projects article {
@@ -242,9 +261,37 @@ h2 {
   align-items: center;
 }
 
+.projects article:last-of-type {
+  margin-bottom: 60px;
+}
+
+.projects article > div:first-of-type {
+  margin-bottom: 20px;
+}
+
+.projects article > div > img{
+  margin-bottom: 20px;
+}
 article > div > h3 {
   font-size: 1.4rem;
   margin-top: 20px;
+}
+
+#contact, footer {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 20px;
+  background-color: rgba(194, 194, 194, 0.096);
+}
+
+#contact > p:last-of-type{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
 }
 
 

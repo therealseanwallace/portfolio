@@ -1,3 +1,5 @@
+"use strict";
+
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const modal = document.querySelector(".modal");
 const modalCloseButton = document.querySelector(".modalCloseButton");
