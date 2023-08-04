@@ -3,6 +3,7 @@
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const modal = document.querySelector(".modal");
 const modalCloseButton = document.querySelector(".modalCloseButton");
+const menuLinks = document.querySelectorAll(".smoothScroll");
 
 const showHamburger = () => {
   hamburgerMenu.classList.remove("hidden");
@@ -26,3 +27,19 @@ window.addEventListener("click", (event) => {
     showHamburger();
   }
 });
+
+const clickHandler = (e) => {
+  e.preventDefault();
+  const href = e.currentTarget.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+  modal.classList.add("hidden");
+  showHamburger();
+};
+
+for (let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener("click", clickHandler);
+}
