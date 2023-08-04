@@ -104,6 +104,12 @@ nav > ul {
   cursor: pointer;
 }
 
+.currentLang {
+  border: 2px solid rgba(245, 245, 245, 0.473);
+  border-radius: 5px;
+}
+
+
 li {
   list-style: none;
 }

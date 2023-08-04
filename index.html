@@ -9,9 +9,16 @@
   <body>
     <header>
       <nav id="nav">
+        <a href="index.html"
+          ><button class="langButton currentLang">
+            <img
+              src="./assets/uk-flag.webp"
+              alt="La bandera nacional del Reino Unido."
+            /></button
+        ></a>
         <a href="es.html"
           ><button class="langButton">
-            <img src="./assets/spain-flag.webp" /></button
+            <img src="./assets/spain-flag.webp" alt="The national flag of Spain."/></button
         ></a>
         <ul class="menuList">
           <li><a href="#nav" class="smoothScroll">Home</a></li>
@@ -46,7 +53,12 @@
 
     <main>
       <section id="about">
-        <div class="picContainer"><img src="./assets/sean.png" /></div>
+        <div class="picContainer">
+          <img
+            src="./assets/sean.png"
+            alt="A picture of the creator of this website, a European man with short hair and beard, wearing a black shirt with small, square pattern."
+          />
+        </div>
 
         <div class="aboutDetail">
           <h3>Hi!</h3>
@@ -92,7 +104,11 @@
         <article>
           <div>
             <a href="./assets/jet.png" target="_blank">
-              <img class="projectImage" src="./assets/jet-preview.png" />
+              <img
+                class="projectImage"
+                src="./assets/jet-preview.png"
+                alt="An image of a website which displays UK education tenders."
+              />
               <p class="fullImageLink">Click to see larger image</p></a
             >
             <p class="fullImageLink">(opens new tab)</p>
@@ -100,9 +116,9 @@
           <h3 class="projectTitle">justEducationTenders</h3>
           <p class="projectDescription">
             A full stack app which crawls, stores, and displays UK education
-            tenders in near-real time. Built in Next.JS with a
-            crawler service running on a separate VM. Hosted using Vercel, AWS,
-            Cloudflare, and GitHub Pages.
+            tenders in near-real time. Built in Next.JS with a crawler service
+            running on a separate VM. Hosted using Vercel, AWS, Cloudflare, and
+            GitHub Pages.
           </p>
           <div class="project-links">
             <a href="https://github.com/therealseanwallace/jetNextFrontend"
@@ -115,7 +131,7 @@
         <article>
           <div>
             <a href="./assets/audiophile.png" target="_blank">
-              <img class="projectImage" src="./assets/audiophile-preview.png" />
+              <img class="projectImage" src="./assets/audiophile-preview.png" alt="A preview of a website selling high-end audio equipment."/>
               <p class="fullImageLink">Click to see larger image</p></a
             >
             <p class="fullImageLink">(opens new tab)</p>
@@ -138,7 +154,7 @@
         <article>
           <div>
             <a href="./assets/weather.png" target="_blank">
-              <img class="projectImage" src="./assets/weather-preview.png" />
+              <img class="projectImage" src="./assets/weather-preview.png" alt="A preview of a weather application, showing the weather for Torrevieja, Spain."/>
               <p class="fullImageLink">Click to see larger image</p></a
             >
             <p class="fullImageLink">(opens new tab)</p>
@@ -165,7 +181,7 @@
         <article>
           <div>
             <a href="./assets/memory.png" target="_blank">
-              <img class="projectImage" src="./assets/memory-preview.png" />
+              <img class="projectImage" src="./assets/memory-preview.png" alt="A preview of a memory game with an interface that looks like the classic computer interface from Star Trek: The Next Generation."/>
               <p class="fullImageLink">Click to see larger image</p></a
             >
             <p class="fullImageLink">(opens new tab)</p>
@@ -174,7 +190,7 @@
           <p class="projectDescription">
             A Star Trek-themed memory game built in React. Users must click each
             card once per round to advance. If a card is clicked twice, user
-            loses a life.
+            loses a life. Looks best on desktop.
           </p>
           <div class="project-links">
             <a href="https://github.com/therealseanwallace/memory">GitHub</a>
@@ -185,14 +201,14 @@
         <article>
           <div>
             <a href="./assets/todo.png" target="_blank">
-              <img class="projectImage" src="./assets/todo-preview.png" />
+              <img class="projectImage" src="./assets/todo-preview.png" alt="A preview of a to-do app featuring Kanban-style task cards."/>
               <p class="fullImageLink">Click to see larger image</p></a
             >
             <p class="fullImageLink">(opens new tab)</p>
           </div>
           <h3 class="projectTitle">To-do</h3>
           <p class="projectDescription">
-            The classic portfolio project: a to-do app. Implemented in React
+            The classic learner's project: a to-do app. Implemented in React
             featuring Kanban-style task cards.
           </p>
           <div class="project-links">
@@ -200,14 +216,15 @@
             <a href="https://therealseanwallace.github.io/todo/">Live</a>
           </div>
         </article>
+        
       </section>
 
       <section id="contact">
         <h2 class="sectionTitle">Contact</h2>
         <p>
           Interested in working with me, or just an informal chat about web
-          development? Send me a quick email or connect with me on
-          LinkedIn - I'd love to hear from you!
+          development? Send me a quick email or connect with me on LinkedIn -
+          I'd love to hear from you!
         </p>
         <div class="contactMethods">
           <a href="mailto:sean@seanwallace.dev" class="contactLink">Email</a>
