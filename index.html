@@ -9,8 +9,10 @@
   <body>
     <header>
       <nav id="nav">
-
-        <a href="es.html"><button class="langButton"><img src="./assets/spain-flag.webp"></button></a>
+        <a href="es.html"
+          ><button class="langButton">
+            <img src="./assets/spain-flag.webp" /></button
+        ></a>
         <ul class="menuList">
           <li><a href="#nav" class="smoothScroll">Home</a></li>
           <li><a href="#about" class="smoothScroll">About</a></li>
@@ -38,7 +40,7 @@
       <section class="hero">
         <h1>Sean Wallace</h1>
         <h2>Web developer</h2>
-        <button>Contact me</button>
+        <a href="#contact"><button>Contact me</button></a>
       </section>
     </header>
 
@@ -59,7 +61,8 @@
             <br />
             <br />
             I'm currently seeking opportunities that will leverage my skills,
-            challenge me, and provide room for growth. <br /> <br />
+            challenge me, and provide room for growth. <br />
+            <br />
             With a knack for creative solutions, effective collaboration, and a
             keen eye for detail, I'm ready to embark on new endeavors. Feel free
             to reach out!
@@ -97,8 +100,8 @@
           <h3 class="projectTitle">justEducationTenders</h3>
           <p class="projectDescription">
             A full stack app which crawls, stores, and displays UK education
-            tenders. Includes: React frontend, an Express RESTful API, and a
-            crawler service running on a separate VM. Hosted using Heroku, AWS,
+            tenders in near-real time. Built in Next.JS with a
+            crawler service running on a separate VM. Hosted using Vercel, AWS,
             Cloudflare, and GitHub Pages.
           </p>
           <div class="project-links">
@@ -202,26 +205,25 @@
       <section id="contact">
         <h2 class="sectionTitle">Contact</h2>
         <p>
-          Interested in working with me? Just send me a quick email or connect
-          with me on LinkedIn.
+          Interested in working with me, or just an informal chat about web
+          development? Send me a quick email or connect with me on
+          LinkedIn - I'd love to hear from you!
         </p>
-        <p>
-          <a href="mailto:wallace.sean111@gmail.com">Email</a>
-        </p>
-        <p>
-          <a href="https://github.com/therealseanwallace">Github</a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/sean-wallace-338a53198/"
+        <div class="contactMethods">
+          <a href="mailto:sean@seanwallace.dev" class="contactLink">Email</a>
+          <a
+            href="https://www.linkedin.com/in/therealseanwallace"
+            class="contactLink"
             >LinkedIn</a
           >
-        </p>
-        <p>
+          <a href="https://github.com/therealseanwallace" class="contactLink"
+            >GitHub</a
+          >
           <a
             href="https://docs.google.com/document/d/1o4OJ_ZT0NMAN1t1YRWOdtU5r9ifq-viHr8SsKAW8gYY"
             >CV</a
           >
-        </p>
+        </div>
       </section>
     </main>
     <footer>Copyright &copy; 2023 Sean Patrick Wallace</footer>

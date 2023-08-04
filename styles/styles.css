@@ -55,7 +55,7 @@ h6 {
 
 * {
   font-family: "roboto-mono", monospace;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
 }
 
@@ -164,18 +164,18 @@ li > a {
   align-items: center;
 }
 
-.hero > button {
+.hero > a > button {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: box-shadow 0.2s;
 }
 
-.hero > button:hover {
+.hero > a > button:hover {
   box-shadow: -3px -3px 5px 0px rgba(245, 245, 245, 0.7);
 }
 
@@ -217,6 +217,7 @@ h2 {
 
 .fullImageLink {
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .aboutDetail {
@@ -280,11 +281,15 @@ h2 {
 }
 
 #projects article {
-  margin-bottom: 80px;
-  max-width: 1000px;
+  margin-bottom: 124px;
+  max-width: 1048px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("../assets/bg.svg");
+  background-color: rgba(194, 194, 194, 0.171);
+  border-radius: 5px;
+  padding: 24px;
 }
 
 #projects article:last-of-type {
@@ -335,7 +340,12 @@ footer {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  text-align: justify;
+  text-align: center;
+}
+
+.contactMethods {
+  display: flex;
+  gap: 24px;
 }
 
 @media (min-width: 768px) {
