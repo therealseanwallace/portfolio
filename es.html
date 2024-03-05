@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Sean Wallace - webdev</title>
     <link href="./styles/styles.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -12,18 +12,16 @@
       <nav id="nav">
         <a href="es.html"
           ><button class="langButton currentLang">
-            <img
-              src="./assets/spain-flag.webp"
-              alt="The national flag of Spain."
-            /></button
-        ></a>
+            <img src="./assets/spain-flag.webp" alt="La bandera nacional de
+            España."" />
+          </button></a
+        >
         <a href="index.html"
           ><button class="langButton">
-            <img
-              src="./assets/uk-flag.webp"
-              alt="La bandera nacional del Reino Unido."
-            /></button
-        ></a>
+            <img src="./assets/uk-flag.webp" alt="The national flag of the
+            United Kingdom."" />
+          </button></a
+        >
         <ul class="menuList">
           <li><a href="#nav" class="smoothScroll">Inicio</a></li>
           <li><a href="#about" class="smoothScroll">Sobre mí</a></li>
@@ -50,7 +48,7 @@
 
       <section class="hero">
         <h1>Sean Wallace</h1>
-        <h2>Desarrollador web</h2>
+        <h2>Desarrollador fullstack</h2>
         <a href="#contact"><button>Háblame</button></a>
       </section>
     </header>
@@ -68,8 +66,8 @@
           <h3>¡Hola!</h3>
 
           <p>
-            ¡Hola! Soy Sean, un dedicado desarrollador web fullstack que vive en
-            la soleada Torrevieja, España. <br />
+            ¡Hola! Soy Sean, un dedicado desarrollador fullstack que vive en la
+            soleada Torrevieja, España. <br />
             <br />Mi experiencia en la redacción de licitaciones y marketing de
             contenidos ha desarrollado mi pensamiento analítico y habilidades
             para resolver problemas, cruciales para mi trabajo actual en el
@@ -98,13 +96,77 @@
           <li class="skill">React</li>
           <li class="skill">NextJS</li>
           <li class="skill">MongoDB</li>
+          <li class="skill">PostgreSQL</li>
+          <li class="skill">SQL</li>
+          <li class="skill">Heroku</li>
           <li class="skill">Express</li>
           <li class="skill">MERN</li>
+          <li class="skill">PERN</li>
         </ul>
       </section>
 
       <section id="projects">
         <h2 class="sectionTitle">Proyectos</h2>
+
+        <article>
+          <div>
+            <a href="./assets/quantum-calc.png" target="_blank">
+              <img
+                class="projectImage"
+                src="./assets/quantum-calc.png"
+                alt="Una imagen de un sitio web."
+              />
+              <p class="fullImageLink">
+                Haz clic para ver la imagen más grande
+              </p></a
+            >
+            <p class="fullImageLink">(abre una nueva pestaña)</p>
+          </div>
+          <h3 class="projectTitle">
+            Calculadora Cuántica de Venta Engañosa de Energía
+          </h3>
+          <p class="projectDescription">
+            He entregado, de principio a fin, una aplicación completa y propia
+            para un cliente que ayuda a los profesionales legales con sus
+            reclamaciones relacionadas con la venta engañosa de energía
+            empresarial. La aplicación utiliza una base de datos PostgreSQL para
+            trabajar con alrededor de 7 millones de filas hasta ahora. Cuenta
+            con:
+          </p>
+
+          <ul class="project-list">
+            <li>Funcionalidad CRUD completa</li>
+            <li>Diseño responsive</li>
+            <li>
+              Autenticación y autorización stateless usando Passport y JWTs
+            </li>
+            <li>API RESTful construida con Express</li>
+            <li>Control de acceso por rol</li>
+            <li>
+              Generación de PDFs de certificados de las búsquedas de los
+              usuarios
+            </li>
+            <li>
+              Almacenamiento de archivos PDF en Google Cloud Storage para su
+              posterior recuperación
+            </li>
+            <li>Error handling personalizado</li>
+            <li>Middleware personalizado</li>
+            <li>Validación personalizada</li>
+            <li>Paginación personalizada</li>
+            <li>
+              Cobertura de pruebas exhaustiva de funciones vitales de la
+              aplicación
+            </li>
+            <li>Base de datos PostgreSQL</li>
+            <li>Frontend y proxy de API Next.JS</li>
+            <li>Alojamiento API y base de datos en Heroku</li>
+          </ul>
+
+          <div class="project-links">
+            <a class="live-link" href="https://calc.axai.co.uk">En Vivo</a>
+          </div>
+        </article>
 
         <article>
           <div>
@@ -126,126 +188,16 @@
             licitaciones de educación del Reino Unido en tiempo casi real.
             Construida en Next.JS con un servicio crawler en una VM separada.
             Hosted usando Vercel, AWS, Cloudflare y GitHub Pages.
+            <br />
+            He crecido mucho como desarollador desde que hice este proyecto, y
+            haría muchas cosas diferentes si lo volviera a hacer. Pero me enseñó
+            mucho sobre Next.JS y la resolución de problemas en general.
           </p>
           <div class="project-links">
-            <a href="https://github.com/therealseanwallace/jetNextFrontend"
+            <a class="live-link" href="https://github.com/therealseanwallace/jetNextFrontend"
               >GitHub</a
             >
-            <a href="https://justeducationtenders.co.uk">En vivo</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/audiophile.png" target="_blank">
-              <img
-                class="projectImage"
-                src="./assets/audiophile-preview.png"
-                alt="Una vista previa de una página web que vende equipos de audio de alta gama."
-              />
-              <p class="fullImageLink">
-                Haz clic para ver la imagen más grande
-              </p></a
-            >
-            <p class="fullImageLink">(se abre en una nueva pestaña)</p>
-          </div>
-          <h3 class="projectTitle">Audiophile</h3>
-          <p class="projectDescription">
-            Una aplicación en Next.JS construida como solución al desafío
-            Audiophile de Front End Mentor. Mi objetivo principal de aprendizaje
-            fue desarrollar mis habilidades en la creación de sitios web
-            hermosos utilizando componentes reutilizables. Utiliza rutas
-            dinámicas y módulos CSS.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/audiophilefrontend"
-              >GitHub</a
-            >
-            <a href="https://audiophilefrontend.vercel.app/">En vivo</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/weather.png" target="_blank">
-              <img
-                class="projectImage"
-                src="./assets/weather-preview.png"
-                alt="Una vista previa de una aplicación del tiempo, mostrando el clima para Torrevieja, España."
-              />
-              <p class="fullImageLink">
-                Haz clic para ver la imagen más grande
-              </p></a
-            >
-            <p class="fullImageLink">(se abre en una nueva pestaña)</p>
-          </div>
-          <h3 class="projectTitle">weatherPlusPlus</h3>
-          <p class="projectDescription">
-            Una aplicación del tiempo fullstack (MERN). Los usuarios pueden
-            consultar el tiempo para una dada ubicación. La aplicación React
-            consulta la API RESTful del backend, que a su vez verifica si el
-            tiempo para esa ubicación ya está almacenado en la base de datos
-            MongoDB. Si no es así, entonces el backend consulta la API de
-            OpenWeatherMap y guarda los resultados en la base de datos antes de
-            devolver la respuesta al frontend.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/weatherPlusPlus"
-              >GitHub</a
-            >
-            <a href="https://weatherplusplus.herokuapp.com/">En vivo</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/memory.png" target="_blank">
-              <img
-                class="projectImage"
-                src="./assets/memory-preview.png"
-                alt="Una vista previa de un juego de memoria con una interfaz que parece la interfaz clásica del ordenador de Star Trek: La Nueva Generación."
-              />
-              <p class="fullImageLink">
-                Haz clic para ver la imagen más grande
-              </p></a
-            >
-            <p class="fullImageLink">(se abre en una nueva pestaña)</p>
-          </div>
-          <h3 class="projectTitle">Juego de Memoria Star Trek</h3>
-          <p class="projectDescription">
-            Un juego de memoria con temática de Star Trek construido en React.
-            El usuario tiene que hacer clic en cada tarjeta una vez por ronda
-            para avanzar. Si se hace clic en una tarjeta dos veces, el usuario
-            pierde una vida. Se ve mejor en escritorio.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/memory">GitHub</a>
-            <a href="https://therealseanwallace.github.io/memory/">En vivo</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/todo.png" target="_blank">
-              <img
-                class="projectImage"
-                src="./assets/todo-preview.png"
-                alt="Una vista previa de una aplicación de tareas pendientes con tarjetas de tareas al estilo Kanban."
-              />
-              <p class="fullImageLink">
-                Haz clic para ver la imagen más grande
-              </p></a
-            >
-            <p class="fullImageLink">(se abre en una nueva pestaña)</p>
-          </div>
-          <h3 class="projectTitle">To-do</h3>
-          <p class="projectDescription">
-            El clásico proyecto de aprendizaje: una aplicación to-do.
-            Implementado en React con tarjetas de tareas al estilo Kanban.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/todo">GitHub</a>
-            <a href="https://therealseanwallace.github.io/todo/">En vivo</a>
+            <a class="live-link" href="https://justeducationtenders.co.uk">En vivo</a>
           </div>
         </article>
       </section>
@@ -275,7 +227,7 @@
     </main>
 
     <footer>
-      <p>© 2023 Sean Wallace - Todos los derechos reservados</p>
+      <p>© 2024 Sean Wallace - Todos los derechos reservados</p>
     </footer>
 
     <script src="./scripts/scripts.js"></script>

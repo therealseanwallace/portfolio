@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Sean Wallace - webdev</title>
     <link href="./styles/styles.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -14,12 +14,15 @@
           ><button class="langButton currentLang">
             <img
               src="./assets/uk-flag.webp"
-              alt="La bandera nacional del Reino Unido."
+              alt="The national flag of the United Kingdom."
             /></button
         ></a>
         <a href="es.html"
           ><button class="langButton">
-            <img src="./assets/spain-flag.webp" alt="The national flag of Spain."/></button
+            <img
+              src="./assets/spain-flag.webp"
+              alt="La bandera nacional de España."
+            /></button
         ></a>
         <ul class="menuList">
           <li><a href="#nav" class="smoothScroll">Home</a></li>
@@ -65,7 +68,7 @@
           <h3>Hi!</h3>
 
           <p>
-            Hello! I'm Sean, a dedicated full-stack web developer living in
+            Hello! I'm Sean, a dedicated full-stack software developer living in
             sunny Torrevieja, Spain. <br />
             <br />My background in grant writing and content marketing has honed
             my analytical thinking and problem-solving skills, crucial to my
@@ -94,13 +97,66 @@
           <li class="skill">React</li>
           <li class="skill">NextJS</li>
           <li class="skill">MongoDB</li>
+          <li class="skill">PostgreSQL</li>
+          <li class="skill">SQL</li>
+          <li class="skill">Heroku</li>
           <li class="skill">Express</li>
           <li class="skill">MERN</li>
+          <li class="skill">PERN</li>
+          <li></li>
         </ul>
       </section>
 
       <section id="projects">
         <h2 class="sectionTitle">Projects</h2>
+
+        <article>
+          <div>
+            <a href="./assets/quantum-calc.png" target="_blank">
+              <img
+                class="projectImage"
+                src="./assets/quantum-calc.png"
+                alt="An image of a website."
+              />
+              <p class="fullImageLink">Click to see larger image</p></a
+            >
+            <p class="fullImageLink">(opens new tab)</p>
+          </div>
+          <h3 class="projectTitle">Energy Misselling Quantum Calculator</h3>
+          <p class="projectDescription">
+            I delivered, from end-to-end, a fullstack, proprietary app for a
+            client which assists legal practicioners with their claims relating
+            to business energy misselling. The app uses a PostgreSQL database to
+            work with about 7 million rows so far. It features:
+          </p>
+
+          <ul class="project-list">
+            <li>Full CRUD functionality</li>
+            <li>Responsive design</li>
+            <li>
+              Stateless authentication and authorisation using Passport and JWTs
+            </li>
+            <li>RESTful API built with Express</li>
+            <li>Role-based access control</li>
+            <li>Generation of certificate PDFs for user's searches.</li>
+            <li>Google Cloud Storage of PDF files for later retrieval.</li>
+            <li>Custom error handling</li>
+            <li>Custom middleware</li>
+            <li>Custom validation</li>
+            <li>Custom pagination</li>
+            <li>Comprehensive test coverage of vital app functions</li>
+            <li>PostgreSQL database</li>
+            <li>Next.JS frontend and API proxy</li>
+            <li>Heroku API and database hosting</li>
+          </ul>
+
+          This was a proprietary work to which all rights belong to the client.
+          I am unable to provide access to the codebase.
+
+          <div class="project-links">
+            <a class="live-link" href="https://calc.axai.co.uk">Live</a>
+          </div>
+        </article>
 
         <article>
           <div>
@@ -117,107 +173,24 @@
           <h3 class="projectTitle">justEducationTenders</h3>
           <p class="projectDescription">
             A full stack app which crawls, stores, and displays UK education
-            tenders in near-real time. Built in Next.JS with a crawler service
-            running on a separate VM. Hosted using Vercel, AWS, Cloudflare, and
-            GitHub Pages.
+            tenders in near-real time. Built in Next.JS for both front and
+            backend with a crawler service running on a separate VM. Hosted
+            using Vercel, AWS, Cloudflare, and GitHub Pages. I've grown a lot as
+            a developer since making this one, and I'd do a lot of things
+            differently if I made it again. But it did teach me a lot about
+            Next.JS and problem-solving in general.
           </p>
           <div class="project-links">
-            <a href="https://github.com/therealseanwallace/jetNextFrontend"
+            <a
+              class="live-link"
+              href="https://github.com/therealseanwallace/jetNextFrontend"
               >GitHub</a
             >
-            <a href="https://justeducationtenders.co.uk">Live</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/audiophile.png" target="_blank">
-              <img class="projectImage" src="./assets/audiophile-preview.png" alt="A preview of a website selling high-end audio equipment."/>
-              <p class="fullImageLink">Click to see larger image</p></a
-            >
-            <p class="fullImageLink">(opens new tab)</p>
-          </div>
-          <h3 class="projectTitle">Audiophile</h3>
-          <p class="projectDescription">
-            A Next.JS app built as a solution to Front End Mentor’s Audiophile
-            challenge. My primary learning goal was to develop my skills in
-            making beautiful websites using reusable components. Makes use of
-            dynamic routes and CSS modules.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/audiophilefrontend"
-              >GitHub</a
-            >
-            <a href="https://audiophilefrontend.vercel.app/">Live</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/weather.png" target="_blank">
-              <img class="projectImage" src="./assets/weather-preview.png" alt="A preview of a weather application, showing the weather for Torrevieja, Spain."/>
-              <p class="fullImageLink">Click to see larger image</p></a
-            >
-            <p class="fullImageLink">(opens new tab)</p>
-          </div>
-          <h3 class="projectTitle">weatherPlusPlus</h3>
-          <p class="projectDescription">
-            A full-stack (MERN) weather app. Users can query weather for a given
-            location. React App will query backend’s RESTful API which in turn
-            checks if weather for this location has been recently grabbed.
-            <br /><br />If not, queries OpenWeatherMap’s API, processes and
-            stores data in MongoDB, and responds to React app with JSON. Hosted
-            on Github (frontend) and Heroku (backend).
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/weatherPlusPlus"
-              >GitHub</a
-            >
-            <a href="https://therealseanwallace.github.io/weatherPlusPlus/"
+            <a class="live-link" href="https://justeducationtenders.co.uk"
               >Live</a
             >
           </div>
         </article>
-
-        <article>
-          <div>
-            <a href="./assets/memory.png" target="_blank">
-              <img class="projectImage" src="./assets/memory-preview.png" alt="A preview of a memory game with an interface that looks like the classic computer interface from Star Trek: The Next Generation."/>
-              <p class="fullImageLink">Click to see larger image</p></a
-            >
-            <p class="fullImageLink">(opens new tab)</p>
-          </div>
-          <h3 class="projectTitle">Star Trek Memory Game</h3>
-          <p class="projectDescription">
-            A Star Trek-themed memory game built in React. Users must click each
-            card once per round to advance. If a card is clicked twice, user
-            loses a life. Looks best on desktop.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/memory">GitHub</a>
-            <a href="https://therealseanwallace.github.io/memory/">Live</a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <a href="./assets/todo.png" target="_blank">
-              <img class="projectImage" src="./assets/todo-preview.png" alt="A preview of a to-do app featuring Kanban-style task cards."/>
-              <p class="fullImageLink">Click to see larger image</p></a
-            >
-            <p class="fullImageLink">(opens new tab)</p>
-          </div>
-          <h3 class="projectTitle">To-do</h3>
-          <p class="projectDescription">
-            The classic learner's project: a to-do app. Implemented in React
-            featuring Kanban-style task cards.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/therealseanwallace/todo">GitHub</a>
-            <a href="https://therealseanwallace.github.io/todo/">Live</a>
-          </div>
-        </article>
-        
       </section>
 
       <section id="contact">
